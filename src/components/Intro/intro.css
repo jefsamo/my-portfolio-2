@@ -1,0 +1,75 @@
+.intro {
+  width: 80%;
+  margin: auto;
+}
+
+.intro-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-second {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  color: #f9f9f9;
+  font-family: General Sans;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.title {
+  color: var(--heading-color);
+  font-family: General Sans;
+  font-size: 64px;
+  font-weight: 900;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.talks {
+  color: #777;
+  font-family: General Sans;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    width: 100%;
+    margin: auto;
+  }
+  .intro-second {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .name,
+  .title {
+    color: #f9f9f9;
+    font-family: General Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .talks {
+    color: #777;
+    font-family: General Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,32 @@
+.block-featured {
+  height: 100px;
+  background-color: var(--box-background);
+  border-radius: 10px;
+  backdrop-filter: blur(7.5px);
+  position: relative;
+}
+
+.featured-inner {
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px;
+}
+.featured-inner p {
+  margin: 5px 0;
+}
+
+.timeline {
+  color: var(--text-color);
+  font-family: Manrope;
+  font-size: 12px;
+}
+
+.project {
+  color: var(--heading-color);
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+}
+
+@media screen and (max-width: 480px) {
+}

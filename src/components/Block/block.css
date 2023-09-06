@@ -1,0 +1,16 @@
+.block {
+  width: 100px;
+  height: 49px;
+  background-color: var(--fullstop-color);
+  display: inline-block;
+  margin-left: 20px;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 480px) {
+  .block {
+    width: 56px;
+    height: 27.44px;
+    margin-left: 8px;
+  }
+}

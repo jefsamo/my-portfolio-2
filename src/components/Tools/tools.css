@@ -1,0 +1,136 @@
+.tools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  grid-template-rows: 240px;
+}
+
+.tool-item-normal {
+  border-radius: 10px;
+  background: rgba(25, 26, 30, 0.7);
+  backdrop-filter: blur(7.5px);
+  padding: 40px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.pronunciation {
+  align-self: flex-end;
+}
+.pro {
+  color: #777;
+  font-family: General Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pronounced {
+  color: #f9f9f9;
+  font-family: General Sans;
+  font-size: 15px;
+}
+
+.speaker {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.item-normal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tool-name {
+  color: var(--text-color);
+  font-family: General Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.surname {
+  color: #fff;
+  font-family: General Sans;
+  font-size: 20px;
+}
+
+.tool-title {
+  color: var(--text-color);
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.description {
+  color: var(--text-color);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tool-item-content-1 {
+  flex: 3;
+  border-radius: 10px;
+  background: var(--box-background);
+  backdrop-filter: blur(7.5px);
+}
+
+.tool-item-content-2 {
+  height: 100%;
+  border-radius: 10px;
+  background: var(--box-background);
+  backdrop-filter: blur(7.5px);
+}
+
+.tool-item-normal-2 {
+  border-radius: 10px;
+  background: rgba(25, 26, 30, 0.7);
+  backdrop-filter: blur(7.5px);
+  padding: 40px 20px 10px;
+}
+
+.tool-item-normal-2 h2 {
+  color: #f9f9f9;
+  font-family: General Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.skills {
+  display: flex;
+  gap: 20px;
+}
+
+.skills p {
+  color: #777;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 480px) {
+  .tools {
+    grid-template-columns: 1fr;
+    grid-template-rows: 240px 240px 240px;
+    row-gap: 20px;
+  }
+
+  .tool-item-normal-2 {
+    padding: 20px 20px;
+  }
+}

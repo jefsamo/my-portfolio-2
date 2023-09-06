@@ -1,0 +1,97 @@
+.extra {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 30px;
+}
+
+.name-card {
+  position: relative;
+  width: 331px;
+  height: 80px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background: var(--box-background);
+  backdrop-filter: blur(7.5px);
+}
+
+.name-card-content {
+  position: absolute;
+  bottom: 10px;
+}
+
+.firstname {
+  color: var(--text-color);
+  font-family: Manrope;
+  font-size: 12px;
+}
+
+.lastname {
+  color: var(--heading-color);
+  font-family: DM Sans;
+}
+
+.extra-bottom {
+  margin-top: 20px;
+  height: 171px;
+  border-radius: 10px;
+  background: var(--box-background);
+  backdrop-filter: blur(7.5px);
+  padding: 30px 20px 10px;
+}
+
+.extra-bottom-inner {
+  display: flex;
+}
+
+.naked {
+  align-self: flex-start;
+  margin-top: 6px;
+  margin-right: 8px;
+}
+
+.bottom-p {
+  color: #777;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.skill-luck {
+  color: #777;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 480px) {
+  .extra {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .name-card {
+    width: 100%;
+  }
+
+  .extra-bottom {
+    padding: 10px;
+    height: 220px;
+  }
+
+  .bottom-p {
+    color: #777;
+    font-family: Manrope;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    display: inline-block;
+  }
+
+  .skill-luck {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
