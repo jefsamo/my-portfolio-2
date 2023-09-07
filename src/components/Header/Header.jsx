@@ -9,7 +9,13 @@ const Header = () => {
           <Link to="/">Olawale Shopeyin</Link>
         </li>
         <li>
-          <Link to="/">Backend Engineer</Link>
+          <Link
+            to="https://github.com/jefsamo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </Link>
         </li>
         <li>
           <Link
