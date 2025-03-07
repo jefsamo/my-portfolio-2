@@ -26,7 +26,7 @@ const Location = () => {
 
   return (
     <div className="location-time">
-      <span className="country">Lagos, NG</span>
+      <span className="country">London, UK</span>
       <span className="time">
         {addZeroToHour}:{addZeroToMinute}
         {timeOfDay}
