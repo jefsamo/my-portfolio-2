@@ -2,35 +2,30 @@ import { useEffect, useState } from "react";
 import "./location.css";
 
 const Location = () => {
-  const [currentHour, setCurrentHour] = useState(0);
-  const [currentMinute, setCurrentMinute] = useState(0);
-  const timeOfDay = currentHour > 12 ? "pm" : "am";
-  const addZeroToMinute =
-    currentMinute < 10 ? `0${currentMinute}` : `${currentMinute}`;
-  const addZeroToHour = currentHour < 10 ? `0${currentHour}` : `${currentHour}`;
+  const [currentTime, setCurrentTime] = useState("");
 
   useEffect(() => {
-    const getCurrentTime = () => {
-      const now = new Date();
-      const hours = now.getHours();
-      const minutes = now.getMinutes();
-      setCurrentHour(hours);
-      setCurrentMinute(minutes);
+    const getLondonTime = () => {
+      const londonTime = new Date().toLocaleTimeString("en-GB", {
+        timeZone: "Europe/London",
+        hour: "2-digit",
+        minute: "2-digit",
+        // second: "2-digit",
+        hour12: true,
+      });
+      setCurrentTime(londonTime);
     };
-    const interval = setInterval(() => {
-      getCurrentTime();
-    }, 1000);
+
+    getLondonTime(); // Set initial time immediately
+    const interval = setInterval(getLondonTime, 1000);
 
     return () => clearInterval(interval);
-  }, [currentMinute, currentHour]);
+  }, []);
 
   return (
     <div className="location-time">
       <span className="country">London, UK</span>
-      <span className="time">
-        {addZeroToHour}:{addZeroToMinute}
-        {timeOfDay}
-      </span>
+      <span className="time">{currentTime}</span>
     </div>
   );
 };

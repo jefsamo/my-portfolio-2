@@ -38,9 +38,9 @@ const Tools = () => {
         <div className="tool-item-content-1">
           <div className="tool-item-dark"></div>
           <div className="tool-item-inner-content">
-            <p className="p-tool-item">Lagos, NG</p>
+            <p className="p-tool-item">London, UK</p>
             <p className="p-2">
-              Lagos is a pretty crazy place, good thing I hardly step out.
+              I used to reside in Lagos but I currently live in London.
             </p>
           </div>
         </div>
@@ -51,16 +51,16 @@ const Tools = () => {
         <div className="skills">
           <div className="left-skills">
             <p>Javascript</p>
-            <p>Express.js</p>
-            <p>Postgres</p>
+            <p>C#</p>
+            <p>MySQL</p>
             <p>Node.js</p>
-            <p>Docker</p>
+            <p>.NET Core</p>
           </div>
           <div className="right-skills">
             <p>Typescript</p>
             <p>Nest.js</p>
             <p>MongoDB</p>
-            <p>GraphQL</p>
+            <p>Java</p>
             <p>AWS</p>
           </div>
         </div>
