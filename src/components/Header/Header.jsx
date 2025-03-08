@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./header.css";
-import CV from "./Olawale_Shopeyin_Backend_Engineer_Resumé.pdf";
+import CV from "./shopeyin_wale_resume.pdf";
 const Header = () => {
   return (
     <>
