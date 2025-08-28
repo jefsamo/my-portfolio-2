@@ -18,9 +18,9 @@ const Tools = () => {
           <h1 className="tool-name">
             Olawale <span className="surname">Shopeyin</span>
           </h1>
-          <p className="tool-title">Back-end Engineer</p>
+          <p className="tool-title">Software Developer</p>
           <p className="description">
-            A passionate software engineer with over 3 years of experience. I
+            A passionate software engineer with over 1 year(s) of experience. I
             like to build things from behind the scenes and I like working with
             designers and developers alike.
           </p>
