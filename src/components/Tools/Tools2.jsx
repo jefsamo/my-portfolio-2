@@ -1,11 +1,15 @@
 import ReachMe from "../ReachMe/ReachMe";
 import "./tools.css";
+import { Howl } from "howler";
 
 const Tools = () => {
-  const audio = new Audio("./shopeyin.m4a");
+  const playSound = () => {
+    var sound = new Howl({
+      src: ["shopeyin.m4a"],
+    });
 
-  const handlePlay = async () => {
-    audio.play();
+    sound.play();
+    console.log("Clicked");
   };
   return (
     <div className="tools">
@@ -16,7 +20,7 @@ const Tools = () => {
           </h1>
           <p className="tool-title">Software Developer</p>
           <p className="description">
-            A passionate software developer with over 1 year(s) of experience. I
+            A passionate software engineer with over 1 year(s) of experience. I
             like to build things from behind the scenes and I like working with
             designers and developers alike.
           </p>
@@ -24,10 +28,9 @@ const Tools = () => {
         <div className="pronunciation">
           <p className="pro">
             Pronounced ~ <span className="pronounced">Show-kpe-yin</span>
-            <span className="speaker" onClick={handlePlay}>
+            <span className="speaker" onClick={playSound}>
               🔉
             </span>
-            {/* <audio ref={audioRef} src={clickSound} preload="auto" /> */}
           </p>
         </div>
       </div>
