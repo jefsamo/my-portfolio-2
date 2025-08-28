@@ -1,11 +1,26 @@
+import { useEffect, useRef } from "react";
 import ReachMe from "../ReachMe/ReachMe";
 import "./tools.css";
 
 const Tools = () => {
-  const audio = new Audio("./shopeyin.m4a");
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    const a = new Audio("/shopeyin.m4a");
+    a.preload = "auto";
+    audioRef.current = a;
+    return () => {
+      a.pause();
+      audioRef.current = null;
+    };
+  }, []);
 
   const handlePlay = async () => {
-    audio.play();
+    try {
+      await audioRef.current.play();
+    } catch (err) {
+      console.error("Playback failed:", err);
+    }
   };
   return (
     <div className="tools">
@@ -27,7 +42,6 @@ const Tools = () => {
             <span className="speaker" onClick={handlePlay}>
               🔉
             </span>
-            {/* <audio ref={audioRef} src={clickSound} preload="auto" /> */}
           </p>
         </div>
       </div>
