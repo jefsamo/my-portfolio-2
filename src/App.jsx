@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 // import FeaturedBar from "./components/FeaturedBar/FeaturedBar";
 import Header from "./components/Header/Header";
@@ -7,7 +8,7 @@ import Location from "./components/LocationAndTime/Location";
 import Tools from "./components/Tools/Tools";
 // import Extra from "./components/Extra/Extra";
 // import Addendum from "./components/Addendum/Addendum";
-// import { lith, flyWing } from "./utils";
+// import { lith, flyWing } from "./utils";import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <div className="fixed-after" style={{}}>
           <Location />
           <Tools />
+          <Analytics />
           <br />
           {/* <FeaturedBar /> */}
           {/* <Project project={lith} /> */}
