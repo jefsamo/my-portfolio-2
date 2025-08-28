@@ -12,7 +12,7 @@ const Intro = () => {
         </div>
         <div className="intro-second">
           <h2 className="talks">
-            Engineer. Who works at the edge of user satisfaction and brand
+            Developer. Who works at the edge of user satisfaction and brand
             ambitions.
             <Block />
           </h2>
